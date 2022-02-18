@@ -11,7 +11,7 @@ def half_pyramid(tamanho):
     parâmetro inserido.
 
     :param tamanho: int: o tamanho desejado da pirâmide
-    :return: retorna a ultima linha da meia piramide de acordo com o tamanho desejado
+    :return: retorna a "figura" da meia piramide de acordo com o tamanho desejado
     '''
 
     for r in range(tamanho):
