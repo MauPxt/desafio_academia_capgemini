@@ -11,19 +11,13 @@ def half_pyramid(tamanho):
     parâmetro inserido.
 
     :param tamanho: int: o tamanho desejado da pirâmide
-    :return: retorna o tamanho da base da pirâmide preenchido com asteriscos
+    :return: retorna a ultima linha da meia piramide de acordo com o tamanho desejado
     '''
 
     for r in range(tamanho):
-        for _ in range(tamanho - r - 1):
-            print(' ', end='')  # looping para a criação dos espaços
-        for _ in range(r + 1):
-            print('*', end='')  # looping para a criação do corpo (*)
-        print('')  # print para avançar uma linha da "figura"
-        base_pyramid = tamanho * '*'
-
-    return base_pyramid
+        return "\n".join((" " * (tamanho - r - 1)) + ('*' * (r + 1)) for r in
+                         range(tamanho))
 
 
 if __name__ == '__main__':
-    half_pyramid(6)
+    print(half_pyramid(6))
