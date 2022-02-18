@@ -33,33 +33,32 @@ def validar_senha(senha):
     :param senha: str: senha a ser testada
     :return: retorna se a senha é válida ou inválida
     '''
-    password = senha
     controle = 0  # variável para controle
 
     while True:  # looping para validação dos testes
-        if len(password) < 6:  # testando o tamanho da senha
+        if len(senha) < 6:  # testando o tamanho da senha
             controle = -1
             print(
                 f'A senha deve possuir no mínimo 6 caracteres! '
                 f'Restam: {6 - len(senha)} caracteres')
             break
 
-        elif not re.search("[0-9]", password):  # testando os dígitos numéricos
+        elif not re.search("[0-9]", senha):  # testando os dígitos numéricos
             print('A senha precisa conter no mínimo 1 dígito!')
             controle = -1
             break
 
-        elif not re.search("[a-z]", password):  # testando as letras minúsculas
+        elif not re.search("[a-z]", senha):  # testando as letras minúsculas
             print('A senha precisa conter no mínimo 1 letra em minúsculo!')
             controle = -1
             break
 
-        elif not re.search("[A-Z]", password):  # testando as letras maiúsculas
+        elif not re.search("[A-Z]", senha):  # testando as letras maiúsculas
             print('A senha precisa conter no mínimo 1 letra em maiúsculo!')
             controle = -1
             break
 
-        elif not re.search("[_@$]", password):  # testando caracteres especiais
+        elif not re.search("[_@$]", senha):  # testando caracteres especiais
             print('A senha precisa conter no mínimo 1 caractere especial! '
                   'Ex: !@#$%^&*()-+')
             controle = -1
@@ -77,4 +76,4 @@ def validar_senha(senha):
 
 
 if __name__ == '__main__':
-    validar_senha('Ya3@ff')
+    validar_senha('Ya3')

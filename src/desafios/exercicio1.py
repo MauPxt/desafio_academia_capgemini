@@ -5,13 +5,13 @@ valor de n. A última linha não deve conter nenhum espaço.
 """
 
 
-def half_pyramid(tamanho):
+def escada(tamanho):
     '''
-    Essa função gera uma "figura" de meia pirâmide tendo como tamanho o
+    Essa função gera uma "figura" de escada tendo como tamanho o
     parâmetro inserido.
 
     :param tamanho: int: o tamanho desejado da pirâmide
-    :return: retorna a "figura" da meia piramide de acordo com o tamanho desejado
+    :return: retorna a "figura" da escada de acordo com o tamanho desejado
     '''
 
     for r in range(tamanho):
@@ -20,4 +20,4 @@ def half_pyramid(tamanho):
 
 
 if __name__ == '__main__':
-    print(half_pyramid(6))
+    print(escada(6))
