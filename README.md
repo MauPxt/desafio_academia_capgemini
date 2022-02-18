@@ -1,6 +1,6 @@
-# Desafio_De_Programacao
+# DESAFIO_DE_PROGRAMAÇÃO-ACADEMIA_CAPGEMINI
 
-Repositório destinado a demonstração da resolução dos exercícios propostos no processo seletivo "DESAFIO DE PROGRAMAÇÃO - ACADEMIA CAPGEMINI".
+Repositório destinado a efetuar as demonstrações das resoluções dos exercícios propostos no processo seletivo "DESAFIO DE PROGRAMAÇÃO - ACADEMIA CAPGEMINI".
 
 ## Feito com:
 
@@ -9,17 +9,17 @@ Repositório destinado a demonstração da resolução dos exercícios propostos
  <br>
  <br>
 
-## Exercício 1:
+## src/desafios/exercicio1.py:
 
-Contém a resolução da primeira questão. Tem como enuciado a criação de um código gerador de half_pyramid.
+Contém a resolução da primeira questão. Tem como enuciado a criação de um código gerador da figura de uma escada.
 <br>
 
-## Exercício 2:
+## src/desafios/exercicio2.py:
 
-Contém a resolução da segunda questão. Tem como problema um sistema de validação de senhas com interação com o usuário.
+Contém a resolução da segunda questão. Tem como problema um sistema de validação de senhas que possui interação com o usuário.
 <br>
 
-## Exercício 3:
+## src/desafios/exercicio3.py:
 
 Contém a resolução da terceira questão. O problema proposto dessa vez é a criação de um código que trabalhe com anagramas em pares.
 <br>
