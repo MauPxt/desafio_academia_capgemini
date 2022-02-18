@@ -31,6 +31,7 @@ def validar_senha(senha):
         Contém no mínimo 1 caractere especial.
 
     :param senha: str: senha a ser testada
+    :return: retorna se a senha é válida ou inválida
     '''
     password = senha
     controle = 0  # variável para controle

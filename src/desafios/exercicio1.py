@@ -11,6 +11,7 @@ def half_pyramid(tamanho):
     parâmetro inserido.
 
     :param tamanho: int: o tamanho desejado da pirâmide
+    :return: retorna o tamanho da base da pirâmide preenchido com asteriscos
     '''
 
     for r in range(tamanho):
