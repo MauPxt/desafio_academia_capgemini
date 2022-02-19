@@ -34,6 +34,9 @@ Contém a resolução da terceira questão. O problema proposto dessa vez é a c
     3.2 - Clonar esse repositório em formato através do git com o seguinte comando: $ git clone https://github.com/MauPxt/Desafio_De_Programacao
 4 - Acesse os arquivos instalados utilizando a IDE
 5 - Por fim, para executar os scripts, no final de todo arquivo há uma chamada da função para execução dos algoritmos. Insira um valor e execute o código.
-6 - Para a execução dos testes unitários:
-    6.1 - Utilizando a IDE, abra o terminal na pasta base dos arquivos e digite o seguinte comando no terminal: python -m unittest -v
+```
+# Instruções para execução dos testes unitários:
+```sh
+1 - Utilizando a IDE, abra o terminal na pasta base dos arquivos.
+2 - Digite o seguinte comando no terminal do projeto: python -m unittest -v
 ```
