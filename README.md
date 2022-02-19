@@ -29,14 +29,22 @@ Contém a resolução da terceira questão. O problema proposto dessa vez é a c
 ```sh
 1 - Baixe e instale o Python, de preferência a versão 3.7
 2 - Baixe e instale uma IDE que seja possível executar o código em python, exemplo: Pycharm ou Vscode.
+    2 - *Também possível realizar o teste do código através do terminal
 3 - Realize o download dos arquivos. Você pode fazer isso da seguinte forma:
     3.1 - Baixar esse repositório em formato .zip e por fim extrair os arquivos para uma pasta de sua preferência.
-    3.2 - Clonar esse repositório em formato através do git com o seguinte comando: $ git clone https://github.com/MauPxt/Desafio_De_Programacao
-4 - Acesse os arquivos instalados utilizando a IDE
-5 - Por fim, para executar os scripts, no final de todo arquivo há uma chamada da função para execução dos algoritmos. Insira um valor e execute o código.
+    3.2 - Clonar esse repositório através do git com o seguinte comando: "git clone https://github.com/MauPxt/desafio_academia_capgemini"
+4 - Acesse a pasta base dos arquivos
+    4.1 - Através da IDE: Abrir projeto
+    4.2 - Através do terminal: "cd \desafio_academia_capgemini"
+5 - Por fim, para executar os scripts:
+    5.1 - Através da IDE: abra a pasta "src\desafios" e abra o arquivo desejado, logo após utilize o comando que faz executar o código
+    5.2 - Através do terminal: abra a pasta dos arquivos com o comando "cd \desafio_academia_capgemini\src\desafios"
+        5.2.1 - Para executar o exercício 1 utilize o comando "Python exercicio1.py"
+        5.2.2 - Para executar o exercício 2 utilize o comando "Python exercicio2.py"
+        5.2.3 - Para executar o exercício 3 utilize o comando "Python exercicio3.py"
 ```
 # Instruções para execução dos testes unitários:
 ```sh
-1 - Utilizando a IDE, abra o terminal na pasta base dos arquivos.
-2 - Digite o seguinte comando no terminal do projeto: python -m unittest -v
+1 - Utilizando o terminal da IDE ou do sistema operacional abra a pasta base do projeto com o seguinte comando: "cd \desafio_academia_capgemini"
+2 - Para executar o teste digite o seguinte comando: "python -m unittest -v"
 ```
