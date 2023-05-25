@@ -22,7 +22,7 @@ import re
 
 
 def validar_senha(senha):
-    '''
+    """
     Essa função testa a validade de uma senha sob os seguintes critérios:
         Possui no mínimo 6 caracteres.
         Contém no mínimo 1 digito numérico.
@@ -32,47 +32,17 @@ def validar_senha(senha):
 
     :param senha: str: senha a ser testada
     :return: retorna se a senha é válida ou inválida
-    '''
-    controle = 0  # variável para controle
+    """
+    if not (
+        len(senha) >= 6
+        and re.search(r'\d', senha)
+        and re.search(r'[a-z]', senha)
+        and re.search(r'[A-Z]', senha)
+        and re.search(r'[_@$]', senha)
+    ):
+        return 'Senha inválida. Tente novamente!'
 
-    while True:  # looping para validação dos testes
-        if len(senha) < 6:  # testando o tamanho da senha
-            controle = -1
-            print(
-                f'A senha deve possuir no mínimo 6 caracteres! '
-                f'Restam: {6 - len(senha)} caracteres')
-            break
-
-        elif not re.search("[0-9]", senha):  # testando os dígitos numéricos
-            print('A senha precisa conter no mínimo 1 dígito!')
-            controle = -1
-            break
-
-        elif not re.search("[a-z]", senha):  # testando as letras minúsculas
-            print('A senha precisa conter no mínimo 1 letra em minúsculo!')
-            controle = -1
-            break
-
-        elif not re.search("[A-Z]", senha):  # testando as letras maiúsculas
-            print('A senha precisa conter no mínimo 1 letra em maiúsculo!')
-            controle = -1
-            break
-
-        elif not re.search("[_@$]", senha):  # testando caracteres especiais
-            print('A senha precisa conter no mínimo 1 caractere especial! '
-                  'Ex: !@#$%^&*()-+')
-            controle = -1
-            break
-
-        else:
-            controle = 0
-            resultado = "Senha válida!"
-            break
-
-    if controle == -1:  # verificando valor da variável controle
-        resultado = "Senha inválida. Tente novamente!"
-
-    return resultado
+    return 'Senha válida!'
 
 
 if __name__ == '__main__':
